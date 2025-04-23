@@ -7,3 +7,5 @@
 target/classes/META-INF/MANIFEST.MF
 *.prefs
 *.lst
+*.factorypath
+target/
