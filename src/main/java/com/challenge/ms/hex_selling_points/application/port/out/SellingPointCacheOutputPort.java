@@ -9,7 +9,7 @@ public interface SellingPointCacheOutputPort {
 
 	Mono<SellingPoint> save(SellingPoint sellingPoint);
 
-	Mono<SellingPoint> findById(Integer id);
+	Mono<SellingPoint> findByKey(String id);
 
 	Mono<Void> clearCache();
 
@@ -20,4 +20,6 @@ public interface SellingPointCacheOutputPort {
 
 	// para getAllSellingPoints
 	Mono<Void> saveAllSellingPointsToCache(Flux<SellingPoint> sellingPoints);
+
+	Mono<Long> delete(String redisKey);
 }

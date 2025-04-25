@@ -4,6 +4,6 @@ import reactor.core.publisher.Mono;
 
 public interface DeleteSellingPointInputPort {
 
-	Mono<Void> deleteSellingPoint(Integer id);
+	Mono<Long> deleteSellingPoint(Integer id);
 
 }
