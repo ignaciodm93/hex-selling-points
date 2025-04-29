@@ -60,17 +60,6 @@ public class SellingPointController {
 	}
 
 //
-//	@DeleteMapping("/{id}")
-//	public Mono<ResponseEntity<Void>> deleteSellingPoint(@PathVariable Integer id) {
-//		return sellingPointService.deleteById(id).map(result -> {
-//			if (result == 1L) {
-//				return ResponseEntity.status(HttpStatus.OK).build();
-//			} else {
-//				return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-//			}
-//		});
-//	}
-//
 //	@PutMapping("/{id}")
 //	public Mono<ResponseEntity<SellingPoint>> updateSellingPoint(@PathVariable Integer id,
 //			@RequestBody SellingPoint sellingPoint) {

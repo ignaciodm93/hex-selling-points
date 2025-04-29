@@ -1,5 +1,10 @@
 package com.challenge.ms.hex_selling_points.application.domain.model;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
 public class SellingPoint {
 
 	private Integer id;

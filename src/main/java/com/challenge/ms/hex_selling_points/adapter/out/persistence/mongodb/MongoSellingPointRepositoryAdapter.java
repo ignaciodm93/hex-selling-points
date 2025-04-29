@@ -1,11 +1,14 @@
 package com.challenge.ms.hex_selling_points.adapter.out.persistence.mongodb;
 
+import org.springframework.stereotype.Component;
+
 import com.challenge.ms.hex_selling_points.application.domain.model.SellingPoint;
 import com.challenge.ms.hex_selling_points.application.port.out.SellingPointRepositoryOutputPort;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@Component
 public class MongoSellingPointRepositoryAdapter implements SellingPointRepositoryOutputPort {
 
 	private final MongoSellingPointRepository mongoSellingPointRepository;
